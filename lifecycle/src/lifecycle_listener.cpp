@@ -51,7 +51,7 @@ public:
       std::bind(&LifecycleListener::notification_callback, this, std::placeholders::_1));
   }
 
-  void data_callback(const std_msgs::msg::String::SharedPtr msg)
+  void data_callback(const std_msgs::msg::String::ConstSharedPtr msg)
   {
     RCLCPP_INFO(get_logger(), "data_callback: %s", msg->data.c_str());
   }
