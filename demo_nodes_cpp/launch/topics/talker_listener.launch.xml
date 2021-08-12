@@ -1,4 +1,3 @@
 <launch>
-  <node pkg="demo_nodes_cpp" exec="talker" output="screen" />
   <node pkg="demo_nodes_cpp" exec="listener" output="screen" />
 </launch>
